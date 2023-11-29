@@ -1,0 +1,277 @@
+:root{
+    --pr-color : #39A7FF;
+    --sc-color : #87C4FF;
+    --tr-color : #E0F4FF;
+    --pg-color : #1276D7;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #f3fff4; */
+    background: linear-gradient(140deg, var(--pg-color), black);
+}
+
+
+.navbar{
+    z-index: 3;
+}
+
+.nav-color{
+    background: linear-gradient(140deg, var(--pg-color), black);
+    transition: all ease-in 0.5s;
+}
+
+.bg-transparent{
+    transition: all ease-in 0.5s;
+}
+
+
+*{
+    z-index: 2;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+
+.nav-link{
+    font-weight: 24px;
+    font-weight: 600;
+}
+
+.nav-link.active{
+    font-weight: 700;
+}
+
+
+.button-secondary{
+    width: 126px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: white;
+    color: var(--pr-color);
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+.button-secondary:hover{
+    background-color: var(--pr-color);
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-primary{
+    width: 126px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+}
+
+/* Hero Section */
+
+#hero{
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ),
+        /* bottom, image */
+        url(imgbg1-1.jpg);
+    /* background-image: url(imgbg1-1.jpg); */
+    height: 100vh;
+    width: 100%;
+    background-size: 1920px 1080px;
+}
+
+.img-hero{
+    height: 100%;
+}
+
+.hero-tagline h1{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 50px;
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.hero-tagline p{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    filter: brightness(100%);
+
+}
+
+.button-lg-primary{
+    width: 242px;
+    height: 82px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: var(--pg-color);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+/* Layanan */
+#service{
+    padding: 100px 0;
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+}
+
+.sub-title{
+    font-size: 18px;
+    color: #000;
+}
+
+.card-layanan{
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+
+    transition: all .2s ease-in;
+}
+
+.circle-icon{
+    width: 70px;
+    height: 70px;
+    background-color: var(--pg-color);
+    border-radius: 50%;
+
+    transition: all .1s ease-in;
+}
+
+.card-layanan h3{
+    font-size: 24px;
+    color: var(--pg-color);
+
+    transition: all .2s ease-in;
+}
+
+.card-layanan p{
+    font-size: 14px;
+
+    transition: all .3s ease-in;
+}
+
+/* Hover */
+
+.card-layanan:hover{
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background: linear-gradient(160deg, var(--pg-color), var(--tr-color));
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover .circle-icon{
+    background-color: white;
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover h3{
+    font-size: 24px;
+    color: black;
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover p{
+    font-size: 14px;
+    color: #000;
+    transition: all .2s ease-in;
+}
+
+/* Contact */
+#contact{
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ),
+        /* bottom, image */
+        url(imgbg1-1.jpg);
+    /* background-image: url(imgbg1-1.jpg); */
+    height: 100vh;
+    width: 100%;
+    background-size: 1600px 900px;
+    margin-top: 158px;
+    width: 100%;
+    height: 100vh;
+    padding: 148px 0px 148px 0px;
+}
+
+/* #contact .container{
+    padding: 148px 0 148px 0;
+} */
+
+#contact h3{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.kontak h6{
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+}
+
+.kontak a{
+    font-size: 15px;
+}
+
+.button-kontak{
+    width: 180px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--pg-color);
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease-in;
+}
+
+.button-kontak:hover{
+    width: 180px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--pr-color);
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease-in;
+}
+
+/* .card-contact{
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    border: none;
+} */
